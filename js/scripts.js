@@ -12,7 +12,6 @@ var countDown = function(number) {
   for(i = number-1; i >= 0; i--) {
     countDownArray.push(number - i);
   }
-
   var arrayLength = countDownArray.length;
 
   for(j = 0; j < arrayLength; j++) {
@@ -38,6 +37,7 @@ $(document).ready(function() {
     if (result === false) {
       $(".badInput").show();
     } else {
+      $("#results li").remove();
       $(".badInput").hide();
       for(n = 0; n < result.length; n++) {
         $("#results").append("<li>" + result[n]);
