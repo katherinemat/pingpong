@@ -1,6 +1,6 @@
 var countDown = function(number) {
   var countDownArray = [];
-  countDownArray.push(number, number-1);
+  countDownArray.push(number, number - 1, number - 2, number - 3);
   return countDownArray;
 }
 
