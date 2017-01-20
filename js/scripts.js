@@ -10,12 +10,10 @@ var countDown = function(number) {
   for(j = 0; j < arrayLength; j++) {
     if (countDownArray[j] % 15 === 0) {
       countDownArray.splice(countDownArray[j-1], 1, "pingpong");
+    } else if (countDownArray[j] % 5 === 0) {
+      countDownArray.splice(countDownArray[j-1], 1, "pong");
     }
   }
-
-
-  countDownArray.splice(2, 1, "ping");
-  countDownArray.splice(4, 1, "pong");
 
   return countDownArray;
 }
