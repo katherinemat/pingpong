@@ -39,7 +39,9 @@ $(document).ready(function() {
       $(".badInput").show();
     } else {
       $(".badInput").hide();
-      $("#results").text(result);
+      for(n = 0; n < result.length; n++) {
+        $("#results").append("<li>" + result[n]);
+      }
     }
   });
 });
