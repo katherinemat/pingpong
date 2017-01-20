@@ -1,5 +1,23 @@
 body {
   word-wrap: break-word;
+  font-family: 'Londrina Outline', sans-serif;;
+  font-size: 36px;
+}
+
+.jumbotron {
+  color: red;
+}
+
+#number {
+  font-family: 'Londrina Solid', sans-serif;
+}
+
+.btn {
+  font-family: 'Londrina Solid', sans-serif;
+}
+
+.submitted {
+  display: none;
 }
 
 ul {

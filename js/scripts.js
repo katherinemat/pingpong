@@ -27,6 +27,9 @@ $(document).ready(function() {
   $("form#inputNumber").submit(function(event) {
     event.preventDefault();
 
+    $(".submitted").toggle();
+    $(".notSubmitted").toggle();
+
     var userInput = Math.abs(Math.round(parseFloat($("input#number").val())));
 
     var result = countDown(userInput);

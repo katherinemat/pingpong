@@ -4,25 +4,37 @@
     <script src="js/jquery-3.1.1.js"></script>
     <script src="js/scripts.js"></script>
     <link href="../bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Londrina+Outline|Londrina+Solid" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <title>Ping Pong</title>
   </head>
   <body>
-    <div class="container">
-      <form id="inputNumber">
-        <div class="form-group">
-          <label for="number">Enter a number here</label>
-          <input id="number" class="form-control" type="text">
-        </div>
-        <button type="submit" class="btn">Submit</button>
-      </form>
-
-      <div class="results">
-        <ul id="results"></ul>
+    <div class="notSubmitted">
+      <div class="jumbotron">
+        <h1>Ping Pong</h1>
       </div>
+      <div class="container">
+        <form id="inputNumber">
+          <div class="form-group">
+            <label for="number">Enter a number here</label>
+            <input id="number" class="form-control" type="text">
+          </div>
+          <button type="submit" class="btn">Submit</button>
+        </form>
+      </div>
+    </div>
 
-      <div class="badInput">
-        <p id="badInput">Enter a number to get results</p>
+    <div class="submitted">
+      <div class="container">
+        <div class="results">
+          <ul id="results"></ul>
+        </div>
+
+        <div class="badInput">
+          <p id="badInput">Enter a number to get results</p>
+        </div>
+
+        <a href="index.html" <button type="button" class="btn">Go back</button></a>
       </div>
     </div>
   </body>
