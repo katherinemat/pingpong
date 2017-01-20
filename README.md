@@ -10,5 +10,5 @@ Specifications:
 9. replace the number 16 with the word pingpong; input: 15; output: pingpong, 14,...6, pong, 4, ping, 2, 1
 10. replace any multiple of 3 and 5 with ping and pong, respectively; input: 10; output: pong, ping, 8, 7, ping, pong, 4, ping, 2, 1
 11. replace any multiple of 15 with pingpong; input: 46; output: 46, pingpong, 44...
-12. return a sentence if user does not enter a number; input: -34; output: "enter a positive integer to get results"
+12. return a sentence if user does not enter a number; input: hey; output: "enter a number to get results"
 13. replace decimal numbers with whole numbers and negative integers with positive integers to then run through program; input: 3.2; output: 3

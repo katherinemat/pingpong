@@ -1,3 +1,11 @@
+var isNumber = function(number) {
+  if (!number) {
+    return false;
+  } else {
+    return countDown(number);
+  }
+}
+
 var countDown = function(number) {
   var countDownArray = [];
 
@@ -25,7 +33,13 @@ $(document).ready(function() {
   $("form#inputNumber").submit(function(event) {
     event.preventDefault();
     var userInput = parseInt($("input#number").val());
-    var result = countDown(userInput);
-    $("#results").text(result);
+    var result = isNumber(userInput);
+
+    if (result === false) {
+      $(".badInput").show();
+    } else {
+      $(".badInput").hide();
+      $("#results").text(result);
+    }
   });
 });
