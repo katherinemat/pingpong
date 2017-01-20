@@ -1,12 +1,8 @@
-var isNumber = function(number) {
+var countDown = function(number) {
   if (!number) {
     return false;
-  } else {
-    return countDown(number);
   }
-}
 
-var countDown = function(number) {
   var countDownArray = [];
 
   for(i = number-1; i >= 0; i--) {
@@ -32,7 +28,7 @@ $(document).ready(function() {
   $("form#inputNumber").submit(function(event) {
     event.preventDefault();
     var userInput = parseInt($("input#number").val());
-    var result = isNumber(userInput);
+    var result = countDown(userInput);
 
     if (result === false) {
       $(".badInput").show();
