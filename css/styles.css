@@ -2,6 +2,10 @@ body {
   word-wrap: break-word;
 }
 
+ul {
+  list-style: none;
+}
+
 .badInput {
   display: none;
 }

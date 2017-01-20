@@ -27,7 +27,10 @@ var countDown = function(number) {
 $(document).ready(function() {
   $("form#inputNumber").submit(function(event) {
     event.preventDefault();
-    var userInput = parseInt($("input#number").val());
+
+    var userInput = Math.abs(Math.round(parseFloat($("input#number").val())));
+    console.log(userInput);
+
     var result = countDown(userInput);
 
     if (result === false) {
