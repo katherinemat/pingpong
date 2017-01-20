@@ -12,9 +12,14 @@ body {
   background-color: white;
 }
 
+.jumbotron h1 {
+  font-size: 100px;
+  font-weight: bold;
+}
+
 #number {
-  font-family: 'Londrina Solid', sans-serif;
-  font-size: 26px;
+  font-family: 'Londrina Outline', sans-serif;
+  font-size: 28px;
 }
 
 .btn {
@@ -35,6 +40,7 @@ ul {
   width: 380px;
   list-style: none;
   line-height: 100%;
+  background-color: rgb(255, 255, 255);
 }
 
 .number {
@@ -42,21 +48,27 @@ ul {
 }
 
 .pingpong {
-  color: red;
+  color: #FFF417;
   text-align: center;
   letter-spacing: 14px;
 }
 
 .ping {
-  color: blue;
+  color: #BF3BB1;
   text-align: left;
-  letter-spacing: 16px;
+  letter-spacing: 18px;
 }
 
 .pong {
-  color: yellow;
+  color: #2F25C4;
   text-align: right;
-  letter-spacing: 16px;
+  letter-spacing: 18px;
+}
+
+#go-back {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
 }
 
 .badInput {
