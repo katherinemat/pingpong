@@ -5,6 +5,7 @@ var countDown = function(number) {
   }
 
   countDownArray.splice(2, 1, "ping");
+  countDownArray.splice(4, 1, "pong");
 
   return countDownArray;
 }
