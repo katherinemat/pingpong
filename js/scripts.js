@@ -4,6 +4,8 @@ var countDown = function(number) {
     countDownArray.push(number - index);
   }
 
+  countDownArray.splice(2, 1, "ping");
+
   return countDownArray;
 }
 
