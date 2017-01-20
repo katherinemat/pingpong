@@ -1,39 +1,62 @@
 body {
   word-wrap: break-word;
-  font-family: 'Londrina Outline', sans-serif;;
-  font-size: 36px;
+  font-family: 'Londrina Outline', sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  background-image: url("../img/background.png");
+  background-attachment: fixed;
 }
 
 .jumbotron {
-  color: red;
+  color: #900C3F;
+  background-color: white;
 }
 
 #number {
   font-family: 'Londrina Solid', sans-serif;
+  font-size: 26px;
 }
 
 .btn {
   font-family: 'Londrina Solid', sans-serif;
+  font-size: 26px;
 }
 
 .submitted {
   display: none;
+  font-size: 60px;
+  position: relative;
+  overflow: hidden;
 }
 
 ul {
+  padding: 70px 0;
+  margin: auto;
+  width: 380px;
   list-style: none;
+  line-height: 100%;
+}
+
+.number {
+  text-align: center;
 }
 
 .pingpong {
   color: red;
+  text-align: center;
+  letter-spacing: 14px;
 }
 
 .ping {
   color: blue;
+  text-align: left;
+  letter-spacing: 16px;
 }
 
 .pong {
-  color: green;
+  color: yellow;
+  text-align: right;
+  letter-spacing: 16px;
 }
 
 .badInput {

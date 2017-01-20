@@ -48,7 +48,7 @@ $(document).ready(function() {
         } else if (result[n] === "ping") {
           $("#results").append("<li class='ping'>" + result[n]);
         } else {
-          $("#results").append("<li>" + result[n]);
+          $("#results").append("<li class='number'>" + result[n]);
         }
       }
     }
