@@ -6,6 +6,18 @@ ul {
   list-style: none;
 }
 
+.pingpong {
+  color: red;
+}
+
+.ping {
+  color: blue;
+}
+
+.pong {
+  color: green;
+}
+
 .badInput {
   display: none;
 }

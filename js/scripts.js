@@ -23,22 +23,24 @@ var countDown = function(number) {
   return countDownArray;
 }
 
-
 $(document).ready(function() {
   $("form#inputNumber").submit(function(event) {
     event.preventDefault();
 
     var userInput = Math.abs(Math.round(parseFloat($("input#number").val())));
-    console.log(userInput);
 
     var result = countDown(userInput);
 
     if (result === false) {
+      $("#results li").remove();
       $(".badInput").show();
     } else {
       $("#results li").remove();
       $(".badInput").hide();
       for(n = 0; n < result.length; n++) {
+        if (result[n] === "pingpong") {
+          $("#results").append("<li class='pingpong'>" + result[n]);
+        } else
         $("#results").append("<li>" + result[n]);
       }
     }
