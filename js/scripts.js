@@ -40,8 +40,13 @@ $(document).ready(function() {
       for(n = 0; n < result.length; n++) {
         if (result[n] === "pingpong") {
           $("#results").append("<li class='pingpong'>" + result[n]);
-        } else
-        $("#results").append("<li>" + result[n]);
+        } else if (result[n] === "pong") {
+          $("#results").append("<li class='pong'>" + result[n]);
+        } else if (result[n] === "ping") {
+          $("#results").append("<li class='ping'>" + result[n]);
+        } else {
+          $("#results").append("<li>" + result[n]);
+        }
       }
     }
   });
